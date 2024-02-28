@@ -10,3 +10,43 @@ if (set.contains(1)) {
 for (int elem : set) {
     System.out.println(elem);
 }
+
+
+
+// Sample 2
+Map<String, String> map = new HashMap<>();
+map.put("hello", "hi");
+map.put("hello", "goodbye");
+System.out.println(map.get("hello"));
+System.out.println(map.size());
+if (map.containsKey("hello")) {
+    System.out.println("\"hello\" in map");
+}
+for (String key : map.keySet()) {
+    System.out.println(key);
+}
+
+
+
+
+// Sample 3
+public class Main {
+    public static void main(String[] args) {
+        // Create a HashMap
+        Map<String, Integer> hashMap = new HashMap<>();
+
+        // Add key-value pairs
+        hashMap.put("apple", 10);
+        hashMap.put("banana", 20);
+        hashMap.put("orange", 15);
+
+        // Retrieve a value by key
+        int value = hashMap.get("banana");
+        System.out.println("Value for key 'banana': " + value);
+
+        // Iterate over entries
+        for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+}
