@@ -1,0 +1,26 @@
+public class MyClass {
+    public void instanceMethod() {
+        System.out.println("Instance method called");
+    }
+
+    public static void main(String[] args) {
+        // To call instanceMethod, you need to create an instance of MyClass
+        MyClass myObject = new MyClass();
+        myObject.instanceMethod(); // Calling instance method
+    }
+}
+
+
+/*
+In this code, instanceMethod() is an instance method of the class MyClass. To call instanceMethod(), 
+we first create an instance of MyClass using the new keyword (MyClass myObject = new MyClass();) 
+and then call instanceMethod() on that instance (myObject.instanceMethod();).
+
+If you try to call an instance method without creating an instance of the class,
+you'll encounter a compilation error because the instance method is associated with instances of the class and requires an object context to execute. 
+On the other hand, static methods can be called directly on the class itself, without needing an instance of the class.
+
+
+
+
+*/
