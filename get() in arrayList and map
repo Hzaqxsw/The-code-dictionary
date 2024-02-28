@@ -1,0 +1,17 @@
+In ArrayList, get() is used to retrieve elements by their index.
+In Map, get() is used to retrieve values associated with keys.
+
+
+ArrayList:
+
+get(int index) method is used to retrieve an element at a specific index in an ArrayList.
+ArrayList is an ordered collection that allows fast random access to elements by index.
+
+
+
+
+Map (e.g., HashMap, TreeMap):
+
+get(Object key) method is used to retrieve the value associated with a specific key in a map.
+Maps are key-value pairs, and the get() method retrieves the value associated with the specified key.
+Maps do not maintain a specific order of elements like ArrayList. Elements are accessed based on their keys, not their positions.
