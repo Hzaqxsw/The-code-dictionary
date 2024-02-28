@@ -1,0 +1,25 @@
+// method
+getOrDefault(Object key, V defaultValue)
+
+
+import java.util.List;
+import java.util.TreeMap;
+
+public class Example {
+    public static void main(String[] args) {
+        List<String> words = List.of("apple", "banana", "apple", "orange", "banana", "apple");
+        TreeMap<String, Integer> wordCounts = countWords(words);
+        System.out.println("Word counts:");
+        System.out.println(wordCounts);
+    }
+
+    public static TreeMap<String, Integer> countWords(List<String> words) {
+        TreeMap<String, Integer> wordCounts = new TreeMap<>();
+
+        // Iterate through the words list and update the word counts
+        for (String word : words) {
+            wordCounts.put(word, wordCounts.getOrDefault(word, 0) + 1);
+        }
+
+        return wordCounts;
+    }
