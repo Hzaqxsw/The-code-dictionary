@@ -1,0 +1,32 @@
+memory size in bytes:
+
+Data Type Size:
+
+char: 1 byte
+short: 2 bytes
+int: 4 bytes
+long: 4 or 8 bytes (depends on the system)
+float: 4 bytes
+double: 8 bytes
+Custom data types or structures: Sum of the sizes of their members
+
+Array Size:
+Number of elements in the array
+
+Memory Size Calculation:
+For a single data type variable: Size of data type in bytes
+For an array of data type: Size of data type in bytes * Number of elements
+
+
+
+Questiones
+the memory cost difference between storing the address of a 32-entry int array and a 300-entry int array depends on the architecture and the size of a memory address on the system. Let's break it down?
+
+Hint: size of int array and address 
+
+Size of an address: The size of an address depends on the system architecture.
+32-bit system: 4 bytes for an address
+64-bit system: 8 bytes for an address
+
+
+
